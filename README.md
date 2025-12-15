@@ -94,3 +94,18 @@ python3 clientpi.py
 - Her `.sh` dosyasını çalıştırmadan önce: `chmod +x dosya.sh`
 - Detay kurulum/konfigürasyon için her klasörün içindeki `Readme.md` dosyasına bak.
 - Her klasördeki setup.sh / Setup.sh isimleri büyük-küçük harfe duyarlıdır (Linux).
+
+## ⚖️ License & Trademark Notice
+
+### Software License
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+- You may use, copy, modify, and distribute this software under the terms of GPL-3.0.
+- If you distribute modified versions or derivative works, you must provide the corresponding source code under GPL-3.0.
+
+### Trademark Notice
+**"EjOS"** and the **EjOS logo** are trademarks of **Bünyamin Öksüz**.
+
+- Third parties are **not permitted** to use the **"EjOS"** name or the **EjOS logo** to publish, market, brand, or redistribute any software, fork, derivative, service, or product.
+- You may **not** release modified versions or forks under the name **"EjOS"** or any confusingly similar name (e.g., "EjOS AI", "EjOS OS").
+- If you redistribute a **modified version or a fork**, you must **remove EjOS branding** (name/logo) and use your **own** name and branding.
+- This trademark restriction does not limit the rights granted by GPL-3.0 to the source code; it only restricts use of the **name and logo**.

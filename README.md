@@ -5,11 +5,11 @@
 EjOS; Lenovo IdeaPad Z580 üzerinde çalışan Ollama tabanlı yerel LLM altyapısını, Exper üzerinde web panel ve sesli asistan (STT→LLM→TTS) istemcilerini ve Raspberry Pi üzerinde offline STT/TTS istemcisini bir araya getiren, düşük donanım kaynaklarına sahip sistemlerde çevrimdışı sesli etkileşim için tasarlanmış, aktif olarak kullanılan, çok cihazlı bir yerel yapay zekâ sistemidir.
 
 Status: Active / In Use
-
+```text
 [ Mic ] -> [ STT ] -> [ LLM (Ollama) ] -> [ TTS ] -> [ Speaker ]
                       |                |
                    Web UI           Pi Client
-
+```
 
 ## Donanım (Test Ortamı)
 - Exper: Exper Active DEX-144(linux Mint 21.3)

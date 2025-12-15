@@ -10,6 +10,7 @@ Status: Active / In Use
                     |                |
                  Web UI           Pi Client
 
+
 ## Donanım (Test Ortamı)
 - Exper: Exper Active DEX-144(linux Mint 21.3)
   - CPU: Intel Celeron 1037U

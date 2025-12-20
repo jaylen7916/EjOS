@@ -2,7 +2,7 @@
 
 ## NOT: Bu sistemin geliştirilmesinde, yaygın modern pratiklere uygun olarak LLM destekli kodlama araçları kullanılmıştır.
 
-EjOS; Lenovo IdeaPad Z580 üzerinde çalışan Ollama tabanlı yerel LLM altyapısını, Exper üzerinde web panel ve sesli asistan (STT→LLM→TTS) istemcilerini ve Raspberry Pi üzerinde offline STT/TTS istemcisini bir araya getiren, düşük donanım kaynaklarına sahip sistemlerde çevrimdışı sesli etkileşim için tasarlanmış, aktif olarak kullanılan, çok cihazlı bir yerel yapay zekâ sistemidir.
+EjOS; atıl donanımları ve çeşitli Linux tabanlı sistemleri optimize ederek bir araya getiren; Ollama tabanlı yerel LLM altyapısını, web panel ve sesli asistan (STT→LLM→TTS) istemcilerini koordine eden, düşük donanım kaynaklarına sahip cihazlarda çevrimdışı sesli etkileşim için tasarlanmış, aktif olarak kullanılan ve çok cihazlı bir yerel yapay zekâ ekosistemidir.
 
 Status: Active / In Use
 ```text

